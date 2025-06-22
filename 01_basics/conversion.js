@@ -14,11 +14,33 @@ let valueInName = Number(name);
 
 let isLoggedIn = "VINAYAK";
 let booleanIsLoggedIn = Boolean(isLoggedIn);
-console.log(booleanIsLoggedIn);
+//console.log(booleanIsLoggedIn);
  // 1 => TRUE // 0 => false
  // " "=>fasle
  // "vinayak" =>true
 
 let some = 33;
 let stringsome = String(some);
-console.log(typeof stringsome);
+//console.log(typeof stringsome);
+
+
+// -----------------operation----------------------
+let str1 = "vinayak"
+let str2 = " kumar"
+// console.log(str1+str2);
+// console.log("1"+2);
+// console.log(1+'2');
+// console.log("1"+2+2+2); //1222
+// console.log(1+2+'2'+'2'); // 322 => jab string nahi aayega tbtk add hoga uske baad as string treat hoga
+
+console.log(+true); //1
+console.log(+""); //0
+
+let num1, num2,num3
+num1 = num2 =num3 = 2+2
+
+
+
+
+
+
