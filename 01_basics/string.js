@@ -17,10 +17,14 @@ console.log(anotherString);
 const newString1 = "       vinayak  " // trims the white spaces
 console.log(newString1.trim());
 
-const url = 'https://dsvsrgfeggsd%200/sff'
-console.log(url.replace('%200','---')); // replace %200 to ---
-
+const url = 'https://dsvsrgfeggsd%200/sff' 
+console.log(url.replace('%200','---')); // replace %200 to --- 
 console.log(url.includes('vina')) // checks if 'vina' is present or not
 console.log(gameName.split('-')); // seperates string based on - 
+
+
+
+
+
 
 
