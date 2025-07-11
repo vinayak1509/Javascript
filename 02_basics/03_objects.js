@@ -2,7 +2,10 @@
 // Object.create 
 
 
-// object literals
+// object literals 
+// objects created through object literals provide multiple instances of that object any change to 
+// any particular instance does not affect entire script
+
 const mysym = Symbol("ms1");
 const mysym1 = Symbol("ms2");
 const user ={
