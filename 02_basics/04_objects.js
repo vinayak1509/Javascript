@@ -26,13 +26,22 @@ const obj2 ={3:"a", 4:"b"}
 
  const obj3 = {...obj1,...obj2}
 
-console.log(obj3);
+// console.log(obj3);
 
 
 
 
-console.log(Object.keys(tinderUser)); // puts all keys into an array
-console.log(Object.values(tinderUser)); // puts all the values into an array
-console.log(Object.entries(tinderUser)); // array of pairs where each element of array is a key value pair
+// console.log(Object.keys(tinderUser)); // puts all keys into an array
+// console.log(Object.values(tinderUser)); // puts all the values into an array
+// console.log(Object.entries(tinderUser)); // array of pairs where each element of array is a key value pair
  
+const course = {
+    coursename: "js in hindi",
+    price: "999",
+    teacher: "vinayak"
+}
+
+//  object de-structure
+const {teacher} =course;  // Or const {teacher : t}  =course...now you dont need to write course.teacher just write teacher or t
+console.log(t);
 
