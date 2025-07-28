@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur Code</title>
+</head>
+<body style="background-color: #212121; color: antiquewhite; ">
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+</body>
+<script>
+    function addLanguage(langName){
+        const li = document.createElement('li');
+        const text = document.createTextNode(langName);
+        li.appendChild(text);
+        const ul  = document.querySelector('.language')
+        ul.appendChild(li)
+        
+    }
+    addLanguage("python")
+    addLanguage("typeScript") 
+
+    //edit 
+
+    const secLang = document.querySelector("li:nth-child(2)")
+     // console.log(secLang);
+    // secLang.innerHTML = "mongo" :-Not optimised way to do
+   const newLi =  document.createElement('li')
+   newLi.textContent = "mongo"
+  secLang.replaceWith(newLi)
+ 
+    //edit
+    const firstLang = document.querySelector("li:first-child")
+    firstLang.outerHTML = '<li>TypeScript</li>'
+
+    //remove
+    const lastLang = document.querySelector("li:last-child")
+    lastLang.remove() 
+
+    
+</script>
+</html>
+
+
+
