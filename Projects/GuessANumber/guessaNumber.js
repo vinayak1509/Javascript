@@ -33,7 +33,7 @@ function validateGuess(guess) {
     alert('PLease enter a  number less than 100');
   } else {
     prevGuess.push(guess);
-    if (numGuess === 11) {
+    if (numGuess === 10) {
       displayGuess(guess);
       displayMessage(`Game Over. Random number was ${randomNumber}`);
       endGame();
@@ -49,9 +49,9 @@ function checkGuess(guess) {
     displayMessage(`You guessed it right`);
     endGame();
   } else if (guess < randomNumber) {
-    displayMessage(`Number is too low`);
+    displayMessage(`Number is TOOO low`);
   } else if (guess > randomNumber) {
-    displayMessage(`Number is too High`);
+    displayMessage(`Number is TOOO High`);
   }
 }
 
