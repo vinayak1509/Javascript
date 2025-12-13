@@ -38,4 +38,11 @@ const mn2 = myArr.splice(1,3);
 console.log(mn2);
 
 console.log("c ", myArr);
+// OUTPUTS:
 
+
+// A  [ 0, 1, 2, 3, 4, 5 ]
+// [ 1, 2 ]
+// B  [ 0, 1, 2, 3, 4, 5 ]
+// [ 1, 2, 3 ]
+// c  [ 0, 4, 5 ]
