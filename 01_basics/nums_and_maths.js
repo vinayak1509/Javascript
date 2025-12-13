@@ -1,14 +1,14 @@
 const score = 400
 // console.log(score);
 const balance  = new Number(400);
-// console.log(balance); // explicitly it will mention its type that it is of number type
+// console.log(balance);  [Number: 400] // explicitly it will mention its type that it is of number type
 
 // console.log(balance.toString().length); // 3
 // console.log(balance.toFixed(2)); // 400.00
 
 
 const othernUm = 1123.33454
-// console.log(othernUm.toPrecision(4)); //1123
+// console.log(othernUm.toPrecision(4)); //1123 // if 5 => 1123.3
 
 const hundreds = 1000000;
 // console.log(hundreds.toLocaleString()) // insert commas by default acc to the international number system
