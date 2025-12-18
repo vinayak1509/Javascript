@@ -1,0 +1,20 @@
+Whenever a code is executed, the first thing that happens is the creation of global execution context....
+
+Broadly, there are three types of execution contexts:
+1. Global execution context
+2. Function execution context
+3. Eval execution context
+
+Steps in execution:
+1. Global execution context creation.
+2. Memory phase
+3. Execution phase
+
+Memory phase:
+All the variables are allocated separate memory and they are assigned values undefined
+functions are allocated their defination
+
+Execution phase:
+All the variables get the desired values , operations are performed.
+Each time a function is created, a new execution context is created
+
