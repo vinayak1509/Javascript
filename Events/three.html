@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai aur Javascript</h1>
+    <button id="stop">stop</button>
+    <button id="start">start</button>
+
+</body>
+<script>
+//   setInterval(() => {
+//     console.log("vinayak", Date.now());
+    
+//   }, 1000); // after every 1 sec , it will print 
+
+// another way to use: you can pass the reference of the function 
+const date = function (str){
+    console.log(str+" vinayak", Date.now());
+   }
+ let dateint ; // it can take the third parameter also which can be used in the function to perform some operation
+document.querySelector('#stop').addEventListener('click',()=>{
+clearInterval(dateint);
+console.log("stopped");
+
+})
+let str = "HI";
+document.querySelector('#start').addEventListener('click',()=>{
+  dateint  = setInterval(date,2000,"HI")
+})
+
+</script>
+</html>
