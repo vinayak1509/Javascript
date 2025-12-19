@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai aur code</h1>
+    <button id="stop">stop</button>
+</body>
+<script>
+    const sayvinayak = function(){
+        console.log("vinayak");
+        
+    }
+    const changetext = function()
+    {
+        document.querySelector('h1').innerHTML = "hello"
+    }
+    const changeme = setTimeout(changetext,2000) // it will change the text after 2 secs.
+    // if we want to stop timeout before it executes we can use cleartimeout
+    // clearTimeout takes the reference of the timeout.
+    document.querySelector('#stop').addEventListener('click',()=>{
+        clearTimeout(changeme);  // if button clicked before the execution, then timeout won't work and stopped will be printed.
+        console.log("stopped");
+        
+    })
+</script>
+</html>
